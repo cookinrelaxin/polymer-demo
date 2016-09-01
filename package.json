@@ -1,0 +1,9 @@
+{
+	"name": "polymer_demo",
+	"version": "0.1.0",
+	"author": "Zachary Feldcamp <zachary.feldcamp@me.com>",
+	"dependencies": {
+		"express": "4.14.x",
+		"bower": "1.7.x"
+	}
+}
