@@ -4,4 +4,3 @@ app:
         - 80
     environment:
         - SERVICE_NAME=polymer-demo
-        - SERVICE_ID=polymer-demo
