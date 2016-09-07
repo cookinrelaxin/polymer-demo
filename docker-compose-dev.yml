@@ -1,0 +1,4 @@
+app:
+    image: 10.100.198.200:5000/polymer-demo
+    ports:
+        - 80:80
