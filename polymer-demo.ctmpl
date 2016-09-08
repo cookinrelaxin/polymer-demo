@@ -1,0 +1,5 @@
+upstream polmyer-demo {
+    {{range service "polymer-demo" "any"}}
+    server {{.Address}}:{{.Port}};
+    {{end}}
+}
