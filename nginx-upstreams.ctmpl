@@ -1,4 +1,4 @@
-upstream polmyer-demo {
+upstream polymer-demo {
     {{range service "polymer-demo" "any"}}
     server {{.Address}}:{{.Port}};
     {{end}}
