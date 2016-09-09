@@ -1,4 +1,9 @@
-app:
-    image: 10.100.198.200:5000/polymer-demo
-    ports:
-        - 80:80
+tests:
+    image: 10.100.198.200:5000/polymer-demo-tests
+    environment:
+        - TEST_TYPE=unit
+
+integ:
+    image: 10.100.198.200:5000/polymer-demo-tests
+    environment:
+        - TEST_TYPE=integ

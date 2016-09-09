@@ -15,6 +15,5 @@ RUN npm install
 RUN bower install --allow-root
 
 RUN npm install -g polymer-cli
-RUN polymer build
-EXPOSE 80
-CMD node app.js
+
+CMD ./run_tests.sh
