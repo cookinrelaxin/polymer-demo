@@ -1,6 +1,21 @@
-app:
+base:
     image: 10.100.198.200:5000/polymer-demo
     ports:
         - 80
     environment:
         - SERVICE_NAME=polymer-demo
+app:
+    extends:
+        service: base
+
+app-blue:
+    extends:
+        service: base
+    environment:
+        - SERVICE_NAME=polymer-demo-blue
+
+app-green:
+    extends:
+        service: base
+    environment:
+        - SERVICE_NAME=polymer-demo-green
